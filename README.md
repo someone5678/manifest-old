@@ -1,7 +1,6 @@
 **English** | [中文](README_CN.md)
 
 # Open Source Kernel for Xiaomi 12T Pro / Redmi K50 Ultra (diting)
-=========================================
 
 The Xiaomi 12T Pro was released at the 4th October 2022.
 Unfortunately, Xiaomi did not release kernel resources with the release of the device, but fortunately the drivers for this device are scattered all over the place. This project aims to provide the missing resources so that developers and enthusiasts can easily start compiling kernels for Xiaomi 12T Pro / Redmi K50 Ultra.
