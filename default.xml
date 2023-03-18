@@ -6,7 +6,7 @@
 
   <!-- Kernel platform manifest -->
   <project name="android_kernel_platform_build" path="kernel_platform/build" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="diting"/>
-  <project groups="qki" name="kernel/common" path="kernel_platform/common" revision="5bb3d44260403c0962e79621f4cc8ac6520dafd5" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project groups="qki" name="kernel/common" path="kernel_platform/common" revision="f60252739b36b772ae43fc29bdf3320639d3b516" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
   <project name="android_kernel_xiaomi_diting" path="kernel_platform/msm-kernel" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="diting">
     <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
     <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
