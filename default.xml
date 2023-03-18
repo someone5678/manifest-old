@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/diting/" name="diting" revision="zeus-s-oss"/>
+  <remote fetch="https://github.com/Xiaomi-Diting-Kernel-Dump/" name="diting" revision="diting"/>
   <remote fetch="https://git.codelinaro.org/clo/la" name="clo" review="codelinaro.org"/>
   <default remote="clo" revision="kernel.build.lnx.1.0" sync-j="8"/>
 
