@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/xiaomi-sm8450-kernel/" name="xiaomi-sm8450-kernel" revision="zeus-s-oss"/>
-  <remote fetch="https://github.com/Xiaomi-Diting-Kernel-Dump/" name="diting" revision="diting"/>
+  <remote fetch="https://github.com/diting/" name="diting" revision="zeus-s-oss"/>
   <remote fetch="https://git.codelinaro.org/clo/la" name="clo" review="codelinaro.org"/>
   <default remote="clo" revision="kernel.build.lnx.1.0" sync-j="8"/>
 
@@ -35,12 +34,12 @@
   </project>
 
   <!-- Video manifest -->
-  <project groups="cyborg" name="android_vendor_qcom_opensource_mmrm-driver" path="vendor/qcom/opensource/mmrm-driver" upstream="refs/heads/mmrm-kernel-waipio.lnx.1.0.r2-rel" remote="xiaomi-sm8450-kernel">
+  <project groups="cyborg" name="android_vendor_qcom_opensource_mmrm-driver" path="vendor/qcom/opensource/mmrm-driver" upstream="refs/heads/mmrm-kernel-waipio.lnx.1.0.r2-rel" remote="diting">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/mmrm_kernel_board.mk" src="mmrm_kernel_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/mmrm_kernel_product.mk" src="mmrm_kernel_product.mk"/>
   </project>
   <project groups="cyborg" name="platform/vendor/opensource/mmrm-driver-test" path="vendor/qcom/opensource/mmrm-driver/test" revision="920386f7e50c59310fb0eaecadaae8268582a46d" upstream="refs/heads/mmrm-kernel-waipio.lnx.1.0.r2-rel"/>
-  <project groups="cyborg" name="android_vendor_qcom_opensource_video-driver" path="vendor/qcom/opensource/video-driver" upstream="refs/heads/video-kernel-waipio.lnx.1.0.r2-rel" remote="xiaomi-sm8450-kernel">
+  <project groups="cyborg" name="android_vendor_qcom_opensource_video-driver" path="vendor/qcom/opensource/video-driver" upstream="refs/heads/video-kernel-waipio.lnx.1.0.r2-rel" remote="diting">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/video_kernel_product.mk" src="video_kernel_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/video_kernel_board.mk" src="video_kernel_board.mk"/>
   </project>
@@ -55,7 +54,7 @@
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/dataipa_dlkm_vendor_board.mk" src="dataipa_dlkm_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataipa_dlkm_vendor_product.mk" src="dataipa_dlkm_vendor_product.mk"/>
   </project>
-  <project name="android_vendor_qcom_opensource_eva-kernel" path="vendor/qcom/opensource/eva-kernel" upstream="refs/heads/eva-kernel.lnx.1.0.r1-rel" remote="xiaomi-sm8450-kernel">
+  <project name="android_vendor_qcom_opensource_eva-kernel" path="vendor/qcom/opensource/eva-kernel" upstream="refs/heads/eva-kernel.lnx.1.0.r1-rel" remote="diting">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/eva_kernel_product.mk" src="eva_kernel_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/eva_kernel_board.mk" src="eva_kernel_board.mk"/>
   </project>
@@ -71,7 +70,7 @@
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_dlkm_vendor_board.mk" src="datarmnet_dlkm_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_dlkm_vendor_product.mk" src="datarmnet_dlkm_vendor_product.mk"/>
   </project>
-  <project name="android_vendor_qcom_opensource_datarmnet-ext" path="vendor/qcom/opensource/datarmnet-ext" upstream="refs/heads/data-kernel.lnx.1.2.r3-rel" remote="xiaomi-sm8450-kernel">
+  <project name="android_vendor_qcom_opensource_datarmnet-ext" path="vendor/qcom/opensource/datarmnet-ext" upstream="refs/heads/data-kernel.lnx.1.2.r3-rel" remote="diting">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_ext_dlkm_vendor_board.mk" src="datarmnet_ext_dlkm_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_ext_dlkm_vendor_product.mk" src="datarmnet_ext_dlkm_vendor_product.mk"/>
   </project>
@@ -84,7 +83,7 @@
   <project name="android_vendor_qcom_proprietary_video-devicetree" path="vendor/qcom/proprietary/video-devicetree" remote="diting"/>
 
   <!-- Build script -->
-  <project name="kernel_platform_script" path="kernel_platform/script" remote="xiaomi-sm8450-kernel">
+  <project name="kernel_platform_script" path="kernel_platform/script" remote="diting">
     <linkfile dest="build.sh" src="build.sh"/>
   </project>
 </manifest>
