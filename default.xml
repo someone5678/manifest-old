@@ -12,12 +12,17 @@
           fetch="https://github.com/Xiaomi-Diting-Kernel-Dump"
           revision="diting" />
 
-  <project name="android_kernel_platform_build" path="kernel_platform/build" remote="xiaomi-sm8450-kernel"/>
+  <project name="android_kernel_platform_build" path="kernel_platform/build" remote="xiaomi-sm8450-kernel">
+    <linkfile dest="build.sh" src="build.sh"/>
+  </project>
   <project name="someone5678/android_kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="github" revision="diting">
     <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
     <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
     <linkfile dest="kernel_platform/common/build.config.msm.lahaina" src="build.config.msm.lahaina"/>
     <linkfile dest="kernel_platform/common/build.config.msm.diting" src="build.config.msm.diting"/>
+    <linkfile dest="kernel_platform/common/build.config.msm.diting.tuivm" src="build.config.msm.diting.tuivm"/>
+    <linkfile dest="kernel_platform/common/build.config.msm.mondrian" src="build.config.msm.mondrian"/>
+    <linkfile dest="kernel_platform/common/build.config.msm.mondrian.tuivm" src="build.config.msm.mondrian.tuivm"/>
   </project>
 
   <project name="android_vendor_qcom_opensource_audio-kernel" path="vendor/qcom/opensource/audio-kernel" remote="xiaomi-sm8450-kernel">
@@ -37,13 +42,13 @@
   <project name="android_vendor_qcom_opensource_wlan_qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" remote="xiaomi-sm8450-kernel"/>
 
   <!-- Proprietary -->
-  <project name="android_vendor_qcom_proprietary_devicetree" path="vendor/qcom/proprietary/devicetree" remote="diting">
+  <project name="someone5678/android_vendor_qcom_proprietary_devicetree" path="vendor/qcom/proprietary/devicetree" remote="github" revision="diting">
     <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="." />
   </project>
-  <project name="android_vendor_qcom_proprietary_audio-devicetree" path="vendor/qcom/proprietary/audio-devicetree" remote="diting"/>
-  <project name="android_vendor_qcom_proprietary_camera-devicetree" path="vendor/qcom/proprietary/camera-devicetree" remote="xiaomi-sm8450-kernel"/>
+  <project name="someone5678/android_vendor_qcom_proprietary_audio-devicetree" path="vendor/qcom/proprietary/audio-devicetree" remote="github" revision="diting"/>
+  <project name="someone5678/android_vendor_qcom_proprietary_camera-devicetree" path="vendor/qcom/proprietary/camera-devicetree" remote="github" revision="diting"/>
   <project name="android_vendor_qcom_proprietary_cvp-devicetree" path="vendor/qcom/proprietary/cvp-devicetree" remote="xiaomi-sm8450-kernel"/>
-  <project name="android_vendor_qcom_proprietary_display-devicetree" path="vendor/qcom/proprietary/display-devicetree" remote="diting"/>
+  <project name="someone5678/android_vendor_qcom_proprietary_display-devicetree" path="vendor/qcom/proprietary/display-devicetree" remote="github" revision="diting"/>
   <project name="android_vendor_qcom_proprietary_mmrm-devicetree" path="vendor/qcom/proprietary/mmrm-devicetree" remote="xiaomi-sm8450-kernel"/>
   <project name="android_vendor_qcom_proprietary_video-devicetree" path="vendor/qcom/proprietary/video-devicetree" remote="xiaomi-sm8450-kernel"/>
 
