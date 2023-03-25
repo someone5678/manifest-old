@@ -27,7 +27,7 @@
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/audio_kernel_vendor_board.mk" src="audio_kernel_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/audio_kernel_product_board.mk" src="audio_kernel_product_board.mk"/>
   </project>
-  <project name="someone5678/android_vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" remote="github" revision="Lineage-20">
+  <project name="someone5678/android_vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" remote="github" revision="lineage-20">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/camera-kernel_board.mk" src="board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/camera-kernel_product.mk" src="product.mk"/>
   </project>
