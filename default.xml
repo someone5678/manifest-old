@@ -12,9 +12,7 @@
           fetch="https://github.com/Xiaomi-Diting-Kernel-Dump"
           revision="diting" />
 
-  <project name="android_kernel_platform_build" path="kernel_platform/build" remote="xiaomi-sm8450-kernel">
-    <linkfile dest="build.sh" src="build.sh"/>
-  </project>
+  <project name="android_kernel_platform_build" path="kernel_platform/build" remote="xiaomi-sm8450-kernel"/>
   <project name="someone5678/android_kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="github" revision="diting">
     <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
     <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
@@ -118,5 +116,10 @@
   <project name="platform/vendor/qcom/opensource/datarmnet-ext" path="vendor/qcom/opensource/datarmnet-ext" remote="clo_vendor_waipio">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_ext_dlkm_vendor_board.mk" src="datarmnet_ext_dlkm_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_ext_dlkm_vendor_product.mk" src="datarmnet_ext_dlkm_vendor_product.mk"/>
+  </project>
+
+  <!-- Build script -->
+  <project name="kernel_platform_script" path="kernel_platform/script" remote="xiaomi-sm8450-kernel">
+    <linkfile dest="build.sh" src="build.sh"/>
   </project>
 </manifest>
