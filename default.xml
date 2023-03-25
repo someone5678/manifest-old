@@ -31,7 +31,7 @@
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/camera-kernel_board.mk" src="board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/camera-kernel_product.mk" src="product.mk"/>
   </project>
-  <project name="android_vendor_qcom_opensource_display-drivers" path="vendor/qcom/opensource/display-drivers" remote="xiaomi-sm8450-kernel">
+  <project name="someone5678/android_vendor_qcom_opensource_display-drivers" path="vendor/qcom/opensource/display-drivers" remote="github" revision="lineage-20">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display_driver_product.mk" src="display_driver_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/display_driver_board.mk" src="display_driver_board.mk"/>
   </project>
